@@ -15,10 +15,12 @@ cite {
 img {
   margin: 0 auto 1.5rem;
   display: block;
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
 }
 
 h2 {
+  margin: 1.5rem;
   font-size: 2rem;
   text-align: center;
 }
@@ -30,25 +32,27 @@ h3 {
 }
 
 .btn {
-  text-align: center;
-  padding: .4em;
-  margin: 0 1em;
+  padding: .5em;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 1.125rem;
   color: white;
   display: flex;
   background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
 }
 
 .row {
-  margin: 0 2em;
+  margin: 0 1.5em;
   display: flex;
   flex-direction: row;
 }
 
 .btn-small {
   font-size: .875rem;
+  margin: 0;
 }
 
 .btn:hover {
@@ -56,10 +60,17 @@ h3 {
 }
 
 .column {
-  padding: .5em;
+  position: relative;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: .75em;
   border-left: 1px solid black;
   border-right: 1px solid black;
   flex-grow: 1;
+  width: 25%;
+  align-items: flex-start;
 }
 
 .first {
